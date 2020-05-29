@@ -1,0 +1,101 @@
+﻿@model DelicateCV.Models.CvGenerationViewModel
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/template1.css" />
+    <title>CV Template 1</title>
+</head>
+<body class="template-body">
+    <!-- template header -->
+    <div class="template-container">
+        <div class="jumbotron jumbotron-fluid bg-info text-white">
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="h1 ml-3">
+                            <span class="firstname">@Model.Fullname</span>
+                        </h1>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        @* <div class="address"> *@
+                        @*   <h6>Address</h6> *@
+                        @* </div> *@
+                        <div class="phone">
+                            <h6>Phone</h6>
+                            <small>@Model.Phone</small>
+                        </div>
+                        <div class="email">
+                            <h6>Email</h6>
+                            <small>@Model.Email</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-content">
+            <div class="summary">
+                <h5 class="h5">Summary</h5>
+                <p>@Model.Summary</p>
+            </div>
+            <div class="skill">
+                <h5 class="h5">Skills Highlights</h5>
+                <ul>
+                    <li>@Model.Skills</li>
+                    @* <li>Design</li> *@
+                    @* <li>MS Office</li> *@
+                    @* <li>Creattive problem solver</li> *@
+                    @* <li>Innovative</li> *@
+                    @* <li>Service focused</li> *@
+                </ul>
+            </div>
+            <div class="experience">
+                <h5 class="h5">Experience</h5>
+                <p><span class="job-title">@Model.JobTitle</span>: <span>@Model.ExperienceStart - @Model.ExperienceEnd</span></p>
+                <p>@Model.Company</p>
+                <ul>
+                    <li>@Model.Duties</li>
+                    @* <li>Develop project concepts and maintain optimal workflow</li> *@
+                    @* <li>Work with senior developers to manage large scale projects</li> *@
+                    @* <li>Carry out quality assurance tests to discover errors and optimize usability</li> *@
+                </ul>
+            </div>
+            <div class="education">
+                <h5 class="h5">Education</h5>
+                <p>@Model.Degree @Model.Course &mdash; @Model.GradYear</p>
+                <p>@Model.Institution</p>
+            </div>
+            <div class="languages">
+                <h5 class="h5">Languages</h5>
+                <ul>
+                    <li>@Model.Languages</li>
+                    @* <li>French</li> *@
+                </ul>
+            </div>
+            <div class="certification">
+                <h5 class="h5">Certifications</h5>
+                <p>@Model.Certifications</p>
+                @* <p>Python frameworks: Django, Numpy, Pandas</p> *@
+            </div>
+        </div>
+        <div class="template-footer bg-info"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</body>
+</html>

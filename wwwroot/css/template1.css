@@ -1,0 +1,70 @@
+.template-body {
+  /*background-color: #eee;
+  padding: 3rem 0;*/
+}
+.firstname,
+.lastname {
+  display: block;
+}
+
+.jumbotron {
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.phone h6,
+.address h6,
+.email h6 {
+  margin: 0;
+}
+
+/* .container.main {
+  height: 8rem;
+  background-color: #333;
+} */
+.template-container {
+  /*/width: 50%;*/
+  margin: 0 auto;
+}
+
+.template-content {
+  padding: 1rem 3rem;
+  background-color: #fff;
+}
+
+.template-content h5 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #777;
+}
+.template-footer {
+  height: 1rem;
+}
+
+/* mobile styles for first cv template */
+@media screen and (max-width: 36rem) {
+  div p,
+  li {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .fullname {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .firstname,
+  .lastname {
+    display: inline;
+  }
+
+  .address,
+  .phone,
+  .email {
+    display: flex;
+    justify-content: space-around;
+  }
+}

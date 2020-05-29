@@ -1,0 +1,101 @@
+﻿@model DelicateCV.Models.CvGenerationViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Template 2</title>
+    <link rel="stylesheet" type="text/css" href="css/template2.css">
+
+</head>
+<body>
+    <div class="container">
+        <section class="out">
+            <div class="head">
+                <div class="my-name">@Model.Fullname</div>
+                <div class="my-title">@Model.JobTitle</div>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; @Model.Phone</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; @Model.Email</span>
+                </div>
+                <p>@Model.Summary </p>
+            </div>
+        </section>
+
+        <section class="seco">
+            <div class="section-title">Experience</div>
+            <div class="info">
+                <div class="job-title-container">
+                    <div>
+                        <div class="job-company">@Model.Company <small><em> -: @Model.ExperienceStart - @Model.ExperienceEnd</em></small></div>
+                        <div class="job-title">@Model.JobTitle</div>
+                    </div>
+                </div>
+                @* <p>"Lorem ipsum dolor sit amet, consectetur adipiiglti;;;ooscing elit, *@
+                @* sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. *@
+                @* reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur. *@
+                @* Excepteur sint occaecat cup, sudeserunt mollit anim id est laborum."</p> *@
+            </div>
+        </section>
+
+        <section class="seco">
+            <div class="section-title">Education</div>
+            <div class="info">
+                <div class="job-title-container">
+                    <div>
+                        <div class="job-company">@Model.Degree @Model.Institution<small><em> - @Model.GradYear</em></small></div>
+                        <div class="job-title"></div>
+                    </div>
+                </div>
+                @* <p>"Lorem ipsum dolor sit amet, consectetur adipiiglti;;;ooscing elit, *@
+                @* sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. *@
+                @* reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur. *@
+                @* Excepteur sint occaecat cup, sudeserunt mollit anim id est laborum."</p> *@
+            </div>
+        </section>
+
+
+
+        <section class="seco">
+            <div class="section-title">Skill</div>
+            <div class="list">
+                <div class="skill-container">
+                    <ul>
+                        <li>@Model.Skills</li>
+                        @* <li>Skill One</li> *@
+                        @* <li>Skill One</li> *@
+                        @* <li>Skill One</li> *@
+                    </ul>
+                </div>
+                @* <p>"Lorem ipsum dolor sit amet, consectetur adipiiglti;;;ooscing elit,<br> *@
+                @*  sed do eiusmod tempor incididunt ut lasbore et dolore magna aliqua.<br> *@
+                @*  reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur.<br> *@
+                @*  Excepteur sint occaecat cup, sudeserunt mollit anim id est laborum."</p> *@
+            </div>
+        </section>
+
+        <div class="interest">
+            <div class="section-title">Certification</div>
+            <div class="interest-container">
+                <p>@Model.Certifications</p>
+                @* <p>Mind Games</p> *@
+            </div>
+
+            <section class="seco">
+                <div class="section-title">Languages</div>
+                <div class="ref">
+                    @* <div class="job-company">Samuel Adelaja. CEO</div> *@
+                    @* <div class="job-titlte">Overflow Group Of Companies</div> *@
+                    <div class="reference">@Model.Languages</div>
+                    @* <P class="reference-details">"Lorem ipsum dolor sit amet, consectetur adipiiglti;;;ooscing elit,<br> *@
+                    @*  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P><br> *@
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
